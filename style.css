@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #FADADD, #FFF5BA);
+  color: #4b3b6b;
+}
+
+.header {
+  background-color: #E3D0FF;
+  background-image: url('images/angio-suite.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px #00000060;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+.content {
+  padding: 30px;
+  background-color: #ffffffdd;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: #d06eff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #E3D0FF;
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+  color: #4b3b6b;
+}
+
+footer a {
+  color: #4b3b6b;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
