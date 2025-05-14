@@ -7,7 +7,7 @@ body {
 
 .header {
   background-color: #E3D0FF;
-  background-image: url(https://github.com/radhpkk/intervensi-web/blob/main/images.jpg?raw=true);
+  background-image:(https://github.com/radhpkk/intervensi-web/blob/main/images.jpg?raw=true);
   background-size: cover;
   background-position: center;
   padding: 40px 20px;
