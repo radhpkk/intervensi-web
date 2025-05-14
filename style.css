@@ -1,23 +1,19 @@
+/* style.css */
 body {
   margin: 0;
   font-family: 'Comic Sans MS', 'Poppins', sans-serif;
-  background-color: #FFF9F0;
-  color: #4B3B6B;
+  background: linear-gradient(to bottom, #FCE4EC, #FFF8E1);
+  color: #4b3b6b;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .header {
-  background-color: #E3D0FF;
-  background-image:(https://github.com/radhpkk/intervensi-web/blob/main/images.jpg?raw=true);
+  background-image: url('images/angio-suite.jpg');
   background-size: cover;
   background-position: center;
-  padding: 40px 20px;
   height: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-  text-shadow: 2px 2px 4px #00000060;
   position: relative;
 }
 
@@ -27,50 +23,47 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4); 
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+  text-shadow: 2px 2px 4px #00000060;
 }
 
-h1 {
-  font-size: 2.8rem;
-  margin: 0;
+.header-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-p {
-  font-size: 1.3rem;
-  margin-top: 10px;
+.header-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 .content {
+  flex: 1;
   padding: 30px;
-  background-color: #ffffffdd;
-  margin: 20px auto;
   max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffffdd;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-a {
-  color: #d06eff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 footer {
-  background-color: #E0F7FA;
+  background-color: #E3D0FF;
   text-align: center;
   padding: 20px;
   font-size: 1rem;
-  color: #E1BEE7;
+  color: #4b3b6b;
+  margin-top: auto;
 }
 
 footer a {
-  color: #E1BEE7;
+  color: #4b3b6b;
   text-decoration: none;
 }
 
