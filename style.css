@@ -1,13 +1,13 @@
 body {
   margin: 0;
   font-family: 'Comic Sans MS', 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #FADADD, #FFF5BA);
-  color: #4b3b6b;
+  background-color: #FFF9F0;
+  color: #4B3B6B;
 }
 
 .header {
   background-color: #E3D0FF;
-  background-image: url(images);
+  background-image: url(https://github.com/radhpkk/intervensi-web/blob/main/images.jpg?raw=true);
   background-size: cover;
   background-position: center;
   padding: 40px 20px;
@@ -62,15 +62,15 @@ a:hover {
 }
 
 footer {
-  background-color: #E3D0FF;
+  background-color: #E0F7FA;
   text-align: center;
   padding: 20px;
   font-size: 1rem;
-  color: #4b3b6b;
+  color: #E1BEE7;
 }
 
 footer a {
-  color: #4b3b6b;
+  color: #E1BEE7;
   text-decoration: none;
 }
 
