@@ -7,7 +7,7 @@ body {
 
 .header {
   background-color: #E3D0FF;
-  background-image: url('images/angio-suite.jpg');
+  background-image: url(images);
   background-size: cover;
   background-position: center;
   padding: 40px 20px;
