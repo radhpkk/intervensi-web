@@ -62,6 +62,34 @@ footer {
   margin-top: auto;
 }
 
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #fef2ff;
+  border: 2px solid #dcb0ff;
+  border-radius: 15px;
+  padding: 20px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: #4b3b6b;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  width: 240px;
+}
+
+.card:hover {
+  background-color: #eacaff;
+  transform: translateY(-5px);
+}
+
+
 footer a {
   color: #4b3b6b;
   text-decoration: none;
