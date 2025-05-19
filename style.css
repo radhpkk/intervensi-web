@@ -13,6 +13,9 @@ body {
   background-image: url('https://github.com/radhpkk/intervensi-web/blob/main/siemens.png?raw=true');
   background-size: cover;
   background-position: center;
+  ...
+}
+
   height: 350px;
   position: relative;
 }
