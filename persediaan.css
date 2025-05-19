@@ -8,6 +8,14 @@ body {
 }
 
 .container {
+  max-width: 100%;         
+  width: 100%;            
+  padding: 2rem;           
+  box-sizing: border-box;  
+  background-color: #fff;  
+}
+
+.container {
   max-width: 800px;
   margin: auto;
   padding: 20px;
