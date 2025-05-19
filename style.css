@@ -143,3 +143,20 @@ footer {
 footer a:hover {
   text-decoration: underline;
 }
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffffffcc;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #ffffff;
+}
+
