@@ -156,7 +156,24 @@ footer a:hover {
   transition: background-color 0.3s ease;
 }
 
-.back-button:hover {
-  background-color: #ffffff;
+.back-button {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* putih lutsinar */
+  color: #000;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 10;
+  transition: background-color 0.3s ease;
 }
+
+.back-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
 
