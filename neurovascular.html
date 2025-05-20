@@ -6,8 +6,23 @@
   <meta charset="UTF-8">
   <title>Neurovascular | e-Intervensi HPKK</title>
   <link rel="stylesheet" href="neuro.css">
- <link rel="stylesheet" href="persediaan.css">
+<link rel="stylesheet" href="persediaan.css">
+<link rel="stylesheet" href="penjagaan.css">
 
+<script>
+  fetch('persediaan.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('persediaan-container').innerHTML = data;
+    });
+
+  fetch('penjagaan.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('penjagaan-container').innerHTML = data;
+    });
+</script>
+    
 </head>
 <body>
     </div>
