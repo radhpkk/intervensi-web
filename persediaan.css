@@ -47,15 +47,36 @@
     padding: 1rem;
   }
 }
-.grid-container {
+.persediaan-section {
+  padding: 20px;
+  background-color: #f8fcff;
+}
+
+.persediaan-section h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.persediaan-section .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
-.step {
-  background: #f9f9f9;
+.step-persediaan {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   padding: 16px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.step-persediaan:hover {
+  transform: translateY(-4px);
+}
+
+.step-persediaan h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
 }
