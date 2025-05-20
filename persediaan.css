@@ -72,23 +72,37 @@
   }
 }
 
-.step-persediaan {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+/* Pastikan semua dalam pembungkus khas */
+.persediaan-section {
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  background-color: #f8fcff;
+}
+
+.persediaan-section h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.persediaan-section .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.step-persediaan {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
-  min-height: 220px;
 }
 
 .step-persediaan:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
 }
 
-.step-persediaan h2::before {
-  counter-increment: stepNum;
-  content: counter(stepNum) ". ";
-  font-weight: bold;
-  color: #007bff;
+.step-persediaan h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
 }
