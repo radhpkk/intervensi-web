@@ -15,7 +15,8 @@
     .then(data => {
       document.getElementById('persediaan-container').innerHTML = data;
     });
-
+</script>
+    
   fetch('penjagaan.html')
     .then(response => response.text())
     .then(data => {
@@ -45,6 +46,8 @@
     });
 </script>
 
+<div id="persediaan-container"></div>
+      
 </section>
 <div id="penjagaan-container"></div>
 
