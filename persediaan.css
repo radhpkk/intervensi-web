@@ -48,35 +48,47 @@
   }
 }
 .persediaan-section {
-  padding: 20px;
-  background-color: #f8fcff;
+  padding: 40px;
+  background-color: #f8f9fa;
 }
 
 .persediaan-section h1 {
   text-align: center;
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2b2b2b;
 }
 
-.persediaan-section .grid-container {
+.grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
+  counter-reset: stepNum;
+}
+
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .step-persediaan {
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 16px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
+  min-height: 220px;
 }
 
 .step-persediaan:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
 }
 
-.step-persediaan h2 {
-  font-size: 1.2rem;
-  margin-bottom: 0.75rem;
+.step-persediaan h2::before {
+  counter-increment: stepNum;
+  content: counter(stepNum) ". ";
+  font-weight: bold;
+  color: #007bff;
 }
