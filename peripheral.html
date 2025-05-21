@@ -2,29 +2,77 @@
 <html lang="ms">
 <head>
   <meta charset="UTF-8">
-  <title>Peripheral - e-Intervensi HPKK</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Peripheral (Thorax/Sclero) | e-Intervensi HPKK</title>
+
+  <link rel="stylesheet" href="neuro.css">
+  <link rel="stylesheet" href="persediaan.css">
+  <link rel="stylesheet" href="penjagaan.css">
 </head>
+
 <body>
 
-  <div class="header">
+  <a href="index.html" class="back-button">← Kembali ke Laman Utama</a>
+
+  <div class="header subpage-header">
     <div class="overlay">
       <div class="header-content">
-        <h1>Peripheral (Thorax/Sclero)</h1>
+        <h1>Prosedur Peripheral (Thorax/Sclero)</h1>
+        <p>Maklumat khusus mengenai prosedur intervensi peripheral (thorax/sclero)</p>
       </div>
     </div>
   </div>
 
-  <div class="content">
-    <h2>Maklumat Prosedur Peripheral</h2>
-    <p>Ini adalah maklumat penting untuk pesakit yang akan menjalani prosedur intervensi peripheral di HPKK.</p>
+  <section class="persediaan-section">
+    <div id="persediaan-container"></div>
+  </section>
 
+  <section class="penjagaan-section light-blue">
+    <div id="penjagaan-container"></div>
+  </section>
+
+  <div class="content">
+    <h2>Apa Itu Prosedur Peripheral (Thorax/Sclero)?</h2>
+    <p>Prosedur intervensi peripheral (thorax/sclero) melibatkan rawatan bagi ...</p>
+
+    <div class="procedure-list">
+      <a href="thorax-pulmonary-angiogram.html">Thorax Pulmonary Angiogram</a>
+      <a href="brochial-artery/thoracic-embo.html">Brochial Artery/Thoracic Embo</a>
+      <a href="peripheral-central-venogram.html">Peripheral Central Venogram</a>
+      <a href="peripheral-UL.html">Peripheral Upper Limb</a>
+      <a href="peripheral-LL-angiogram+plasty.html">Peripheral Lower Limb Angiogram+Plasty</a>
+      <a href="thorax-embolization-bronchial-artery.html">Thorax Embolization of Bronchial Artery</a>
+      <a href="peripheral-aortogram.html">Peripheral Aortogram</a>
+      <a href="peripheral-centra-veno.html">Peripheral Central Venogram+Plasty</a>
+      <a href="peripheral-UL-angiogram.html">Peripheral Upper Limb Angiogram+Plasty</a>
+      <a href="percutaneous-embolization-AVM.html">Percutaneous Embolization AVM Peripheral with Sclerosant</a>
+      <a href="thorax-mechanical-embolism.html">Thorax Mechanical Aspiration of Pulmonary Embolism without Implant</a>
+      <a href="peripheral-angioplasty&stenting.html">Peripheral Angioplasty and Stenting</a>
+      <a href="peripheral-fistulogram.html">Peripheral Fistulogram</a>
+      <a href="peripheral-LL-Angiogram.html">Peripheral Lower Limb Angiogram</a>
+    </div>
+
+    <p>Jika anda mempunyai sebarang pertanyaan, sila hubungi kami.</p>
   </div>
 
+  <!-- Footer -->
   <footer>
     <p>📞 03-9174 2123 | 📧 <a href="mailto:intervensihpkk@gmail.com">intervensihpkk@gmail.com</a></p>
     <p>© 2025 Hospital Pakar Kanak-Kanak UKM</p>
   </footer>
+
+  <script>
+    fetch('persediaan.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('persediaan-container').innerHTML = data;
+      });
+
+    fetch('penjagaan.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('penjagaan-container').innerHTML = data;
+      });
+  </script>
 
 </body>
 </html>
