@@ -1,5 +1,6 @@
 /* neuro.css */
 
+/* ========== Global Styles ========== */
 body {
   margin: 0;
   font-family: 'Comic Sans MS', 'Poppins', sans-serif;
@@ -10,6 +11,7 @@ body {
   min-height: 100vh;
 }
 
+/* ========== Header Section ========== */
 .header {
   background-image: url(https://github.com/radhpkk/intervensi-web/blob/main/neuro.png?raw=true);
   background-size: cover;
@@ -18,7 +20,6 @@ body {
   position: relative;
 }
 
-}
 .overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -31,29 +32,46 @@ body {
   padding: 0 20px;
   text-shadow: 2px 2px 4px #00000060;
 }
+
 .header-content {
   max-width: 800px;
 }
+
 .header-content h1 {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
+
 .header-content p {
   font-size: 1.2rem;
   line-height: 1.5;
 }
 
+/* ========== Content Section ========== */
 .content {
   flex: 1;
   padding: 30px;
   max-width: 800px;
-  margin: 0 auto;
-  background-color: #ffffffdd;
+  margin: 0 auto 30px auto;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
+/* Warna latar khas untuk setiap bahagian */
+.section-purple {
+  background-color: #fef6ff; /* Lembut: ungu muda */
+}
+
+.section-blue {
+  background-color: #eef7ff; /* Lembut: biru muda */
+}
+
+.section-peach {
+  background-color: #fff3e6; /* Lembut: peach */
+}
+
+/* ========== Instruction Text (contoh panduan) ========== */
 .instruction-text {
   text-align: center;
   font-size: 1.2rem;
@@ -67,11 +85,13 @@ body {
   box-shadow: 0 6px 12px rgba(106, 76, 175, 0.3); 
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .instruction-text:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 16px rgba(106, 76, 175, 0.4); 
 }
 
+/* ========== Cards (Jika ada) ========== */
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -93,17 +113,20 @@ body {
   transition: all 0.3s ease;
   width: 240px;
 }
+
 .card:hover {
   background-color: #eacaff;
   transform: translateY(-5px);
 }
 
+/* ========== Procedure List Links ========== */
 .procedure-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 15px;
   margin-top: 20px;
 }
+
 .procedure-list a {
   display: block;
   background-color: #f5f5f5;
@@ -115,10 +138,12 @@ body {
   transition: background-color 0.3s;
   font-weight: 500;
 }
+
 .procedure-list a:hover {
   background-color: #e0e0e0;
 }
 
+/* ========== Back Button ========== */
 .back-button {
   display: inline-block;
   position: absolute;
@@ -134,10 +159,12 @@ body {
   z-index: 10;
   transition: background-color 0.3s ease;
 }
+
 .back-button:hover {
   background-color: rgba(255, 255, 255, 1);
 }
 
+/* ========== Footer ========== */
 footer {
   background-color: #E3D0FF;
   text-align: center;
@@ -146,10 +173,12 @@ footer {
   color: #4b3b6b;
   margin-top: auto;
 }
+
 footer a {
   color: #4b3b6b;
   text-decoration: none;
 }
+
 footer a:hover {
   text-decoration: underline;
 }
