@@ -1,100 +1,36 @@
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-  box-sizing: border-box;
-  background-color: #f5f8fa;
-}
-
-.container > h1 {
-  grid-column: 1 / -1;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #2c3e50;
-}
-
-.step {
-  background: white;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  transition: transform 0.2s ease;
-}
-
-.step:hover {
-  transform: translateY(-4px);
-}
-
-.step h2 {
-  font-size: 1.1rem;
-  margin-bottom: 0.8rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.step ul, .step p {
-  font-size: 0.95rem;
-  margin: 0.5rem 0 0;
-  padding-left: 1.2rem;
-  line-height: 1.5;
-}
-
-@media (max-width: 600px) {
-  .container {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-}
+/* ====== Persediaan Sebelum Prosedur ====== */
 .persediaan-section {
-  padding: 40px;
-  background-color: #f8f9fa;
+  padding: 40px 20px;
+  background-color: #f8fcff;
+  text-align: center;
 }
 
 .persediaan-section h1 {
-  text-align: center;
   font-size: 2rem;
   margin-bottom: 30px;
   color: #2b2b2b;
 }
 
+/* Grid yang fleksibel dan responsif */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   counter-reset: stepNum;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-@media (max-width: 1024px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Pastikan semua dalam pembungkus khas */
-.persediaan-section {
-  padding: 20px;
-  background-color: #f8fcff;
-}
-
-.persediaan-section h1 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.persediaan-section .grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-
+/* Kotak setiap item */
 .step-persediaan {
   background-color: #ffffff;
   border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 16px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+  padding-left: 50px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
   transition: transform 0.3s ease;
 }
 
@@ -102,7 +38,22 @@
   transform: translateY(-4px);
 }
 
-.step-persediaan h2 {
-  font-size: 1.2rem;
-  margin-bottom: 0.75rem;
+/* Nombor automatik */
+.step-persediaan::before {
+  counter-increment: stepNum;
+  content: counter(stepNum);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #6a4caf;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
