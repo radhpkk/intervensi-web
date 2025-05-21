@@ -1,0 +1,251 @@
+/* neuro.css */
+
+/* ========== Global Styles ========== */
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #FCE4EC, #FFF8E1);
+  color: #4b3b6b;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ========== Header Section ========== */
+.header {
+  background-image: url(https://github.com/radhpkk/intervensi-web/blob/main/peripheral.png?raw=true);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+  text-shadow: 2px 2px 4px #00000060;
+}
+
+.header-content {
+  max-width: 800px;
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* ========== Content Section ========== */
+.content {
+  flex: 1;
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Warna latar khas untuk setiap bahagian */
+.section-purple {
+  background-color: #fef6ff; /* Lembut: ungu muda */
+}
+
+.section-blue {
+  background-color: #eef7ff; /* Lembut: biru muda */
+}
+
+.section-peach {
+  background-color: #fff3e6; /* Lembut: peach */
+}
+
+/* ========== Instruction Text (contoh panduan) ========== */
+.instruction-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #6a4caf;
+  background-color: #f3e8ff;
+  padding: 12px 20px;
+  margin: 0 auto 25px auto;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: bold;
+  box-shadow: 0 6px 12px rgba(106, 76, 175, 0.3); 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.instruction-text:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(106, 76, 175, 0.4); 
+}
+
+/* ========== Cards (Jika ada) ========== */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #fef2ff;
+  border: 2px solid #dcb0ff;
+  border-radius: 15px;
+  padding: 20px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: #4b3b6b;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  width: 240px;
+}
+
+.card:hover {
+  background-color: #eacaff;
+  transform: translateY(-5px);
+}
+
+/* ========== Procedure List Links ========== */
+.procedure-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.procedure-list a {
+  display: block;
+  background-color: #f5f5f5;
+  padding: 15px;
+  text-decoration: none;
+  color: #000;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+  font-weight: 500;
+}
+
+.procedure-list a:hover {
+  background-color: #e0e0e0;
+}
+
+/* ========== Back Button ========== */
+.back-button {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* ========== Footer ========== */
+footer {
+  background-color: #E3D0FF;
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+  color: #4b3b6b;
+  margin-top: auto;
+}
+
+footer a {
+  color: #4b3b6b;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ========== Persediaan Sebelum Prosedur (Grid 5 kolum 2 baris + nombor) ========== */
+.preparation-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+  padding: 20px;
+  counter-reset: prep-counter;
+}
+
+.prep-item {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  padding: 15px 20px 15px 50px;
+  position: relative;
+  font-weight: 600;
+  color: #4b3b6b;
+  box-shadow: 0 2px 8px rgb(106 76 175 / 0.15);
+}
+
+/* Nombor di sebelah kiri setiap item */
+.prep-item::before {
+  counter-increment: prep-counter;
+  content: counter(prep-counter);
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #6a4caf;
+  color: white;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Responsif untuk preparation grid */
+@media (max-width: 1200px) {
+  .preparation-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .preparation-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .preparation-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .preparation-grid {
+    grid-template-columns: 1fr;
+  }
+}
