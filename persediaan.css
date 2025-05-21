@@ -14,7 +14,7 @@
 /* Grid yang fleksibel dan responsif */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   counter-reset: stepNum;
   max-width: 1200px;
@@ -26,10 +26,9 @@
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 20px 20px 50px;
   text-align: left;
   position: relative;
-  padding-left: 50px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
   transition: transform 0.3s ease;
 }
@@ -56,4 +55,21 @@
   justify-content: center;
   font-size: 0.9rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.step-persediaan h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  color: #3a1f7a;
+}
+
+/* Styling untuk ul, li supaya lebih kemas */
+.step-persediaan ul {
+  padding-left: 20px;
+  margin: 8px 0;
+}
+
+.step-persediaan p {
+  margin: 8px 0;
 }
