@@ -14,9 +14,10 @@ body {
 /* ========== Header Section ========== */
 .header {
   background-image: url(https://github.com/radhpkk/intervensi-web/blob/main/neuro.png?raw=true);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  height: 400px;
   position: relative;
 }
 
@@ -181,4 +182,70 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* ========== Persediaan Sebelum Prosedur (Grid 5 kolum 2 baris + nombor) ========== */
+.preparation-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+  padding: 20px;
+  counter-reset: prep-counter;
+}
+
+.prep-item {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  padding: 15px 20px 15px 50px;
+  position: relative;
+  font-weight: 600;
+  color: #4b3b6b;
+  box-shadow: 0 2px 8px rgb(106 76 175 / 0.15);
+}
+
+/* Nombor di sebelah kiri setiap item */
+.prep-item::before {
+  counter-increment: prep-counter;
+  content: counter(prep-counter);
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #6a4caf;
+  color: white;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Responsif untuk preparation grid */
+@media (max-width: 1200px) {
+  .preparation-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .preparation-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .preparation-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .preparation-grid {
+    grid-template-columns: 1fr;
+  }
 }
