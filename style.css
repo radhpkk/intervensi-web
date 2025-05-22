@@ -69,7 +69,10 @@ body {
 
 .content h2 {
   margin-top: 0;
-   color: crimson;
+   color: #003366;
+}
+  .no-click {
+  color: #003366;
 }
 
 /* ========== 4. Instruction Highlight Box ========== */
@@ -146,7 +149,7 @@ footer,
 .site-footer {
   background-color: #E3D0FF;
   text-align: center;
-  padding: 20px;
+  padding: 15px 10px;
   font-size: 1rem;
   color: #4b3b6b;
   margin-top: auto;
