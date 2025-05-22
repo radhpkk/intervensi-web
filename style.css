@@ -1,9 +1,19 @@
+/* ========== 0. Reset + Fix Overflow Scroll ========== */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 /* ========== 1. Global Styles ========== */
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin: 0;
   font-family: 'Comic Sans MS', 'Poppins', sans-serif;
   background: linear-gradient(to bottom, #FCE4EC, #FFF8E1);
   color: #4b3b6b;
@@ -28,6 +38,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center; /* 👈 penting untuk centerkan secara horizontal */
   text-align: center;
   color: white;
   padding: 60px 20px 20px 20px;
@@ -38,7 +49,7 @@ body {
 .header-content {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 15px; /* optional, bagi padding kiri dan kanan supaya tak melekat sangat */
+  padding: 0 15px;
 }
 
 .header-content h1 {
@@ -49,23 +60,6 @@ body {
 .header-content p {
   font-size: 1.4rem;
   line-height: 1.6;
-}
-
-.highlight {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* ========== Responsive for Mobile ========== */
-@media (max-width: 600px) {
-  .header-content h1 {
-    font-size: 2.2rem;
-  }
-
-  .header-content p {
-    font-size: 1.1rem;
-  }
 }
 
 /* ========== 3. Main Content Box ========== */
@@ -116,6 +110,7 @@ body {
   gap: 40px;
   justify-content: center;
   margin-top: 40px;
+  padding: 0 15px;
 }
 
 .card {
@@ -178,3 +173,28 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* ========== 8. Responsive for Mobile ========== */
+@media (max-width: 600px) {
+  .header-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .header-content p {
+    font-size: 1.1rem;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .overlay {
+    padding: 40px 10px 20px 10px;
+  }
+
+  .content {
+    padding: 15px;
+  }
+}
+
