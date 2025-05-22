@@ -1,13 +1,15 @@
-{
+/* ========== 1. Global Styles ========== */
+body {
   margin: 0;
   font-family: 'Comic Sans MS', 'Poppins', sans-serif;
-  background: (bottom, #FCE4EC, #FFF8E1);
+  background: linear-gradient(to bottom, #FCE4EC, #FFF8E1);
   color: #4b3b6b;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+/* ========== 2. Header Section ========== */
 .header {
   background-image: url('https://github.com/radhpkk/intervensi-web/blob/main/siemens.png?raw=true');
   background-size: cover;
@@ -24,11 +26,11 @@
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
   display: flex;
-  align-items: flex-start; /* ke atas */
+  align-items: flex-start; /* align to top */
   justify-content: center;
   text-align: center;
   color: white;
-  padding: 60px 20px 20px 20px; /* ruang atas */
+  padding: 60px 20px 20px 20px;
   text-shadow: 2px 2px 4px #00000060;
 }
 
@@ -52,18 +54,7 @@
   margin-bottom: 10px;
 }
 
-.site-footer {
-  background-color: #f2f2f2;
-  padding: 0px;
-  text-align: center;
-  font-size: 14px;
-  color: #333;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-/* === Bahagian Kotak Kandungan Prosedur Intervensi === */
+/* ========== 3. Main Content Box ========== */
 .content {
   flex: 1;
   padding: 40px 20px;
@@ -79,6 +70,7 @@
   margin-top: 0;
 }
 
+/* ========== 4. Instruction Highlight Box ========== */
 .instruction-text {
   text-align: center;
   font-size: 1.2rem;
@@ -98,6 +90,7 @@
   box-shadow: 0 8px 16px rgba(106, 76, 175, 0.4); 
 }
 
+/* ========== 5. Card Grid Section ========== */
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -125,25 +118,7 @@
   transform: translateY(-5px);
 }
 
-footer {
-  background-color: #E3D0FF;
-  text-align: center;
-  padding: 20px;
-  font-size: 1rem;
-  color: #4b3b6b;
-  margin-top: auto;
-  width: 100%;
-}
-
-footer a {
-  color: #4b3b6b;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
+/* ========== 6. Back Button ========== */
 .back-button {
   display: inline-block;
   position: absolute;
@@ -162,4 +137,25 @@ footer a:hover {
 
 .back-button:hover {
   background-color: rgba(255, 255, 255, 1);
+}
+
+/* ========== 7. Footer ========== */
+footer,
+.site-footer {
+  background-color: #E3D0FF;
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+  color: #4b3b6b;
+  margin-top: auto;
+  width: 100%;
+}
+
+footer a {
+  color: #4b3b6b;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
