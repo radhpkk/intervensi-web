@@ -1,13 +1,12 @@
 /* ========== 1. Global Styles ========== */
 body {
-  margin: 0;
-  overflow-x: hidden;
-  font-family: 'Comic Sans MS', 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #FCE4EC, #FFF8E1);
-  color: #4b3b6b;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0;
+  font-family: 'Comic Sans MS', 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #FCE4EC, #FFF8E1);
+  color: #4b3b6b;
 }
 
 /* ========== 2. Header Section ========== */
@@ -21,32 +20,32 @@ body {
 
 .overlay {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 40px 20px;
+  justify-content: center;
   text-align: center;
   color: white;
-  background: rgba(0, 0, 0, 0.4);
+  padding: 60px 20px 20px 20px;
   text-shadow: 2px 2px 4px #00000060;
 }
 
 .header-content {
   max-width: 800px;
-  margin: 0 auto;
 }
 
 .header-content h1 {
   font-size: 3rem;
   margin-bottom: 15px;
-  text-align: center;
 }
 
 .header-content p {
   font-size: 1.4rem;
   line-height: 1.6;
-  text-align: center;
 }
 
 .highlight {
