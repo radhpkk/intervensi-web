@@ -32,10 +32,13 @@ body {
   color: white;
   padding: 60px 20px 20px 20px;
   text-shadow: 2px 2px 4px #00000060;
+  width: 100%;
 }
 
 .header-content {
   max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px; /* optional, bagi padding kiri dan kanan supaya tak melekat sangat */
 }
 
 .header-content h1 {
