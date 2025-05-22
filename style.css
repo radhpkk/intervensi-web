@@ -1,6 +1,7 @@
 /* ========== 1. Global Styles ========== */
 body {
   margin: 0;
+  overflow-x: hidden;
   font-family: 'Comic Sans MS', 'Poppins', sans-serif;
   background: linear-gradient(to bottom, #FCE4EC, #FFF8E1);
   color: #4b3b6b;
