@@ -1,165 +1,33 @@
-body {
-  margin: 0;
-  font-family: 'Comic Sans MS', 'Poppins', sans-serif;
-  background: (bottom, #FCE4EC, #FFF8E1);
-  color: #4b3b6b;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.header {
-  background-image: url('https://github.com/radhpkk/intervensi-web/blob/main/siemens.png?raw=true');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  position: relative;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
-  display: flex;
-  align-items: flex-start; /* ke atas */
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 60px 20px 20px 20px; /* ruang atas */
-  text-shadow: 2px 2px 4px #00000060;
-}
-
-.header-content {
-  max-width: 800px;
-}
-
-.header-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.header-content p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-.highlight {
-  font-size: 28px;
+/* Besarkan font "Selamat datang!" */
+.centered-text {
+  font-size: 1.8rem;
   font-weight: bold;
+  display: inline-block;
   margin-bottom: 10px;
 }
 
-.site-footer {
-  background-color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
-  font-size: 14px;
-  color: #333;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-/* === Bahagian Kotak Kandungan Prosedur Intervensi === */
-.content {
-  flex: 1;
-  padding: 40px 20px;
-  max-width: 850px;
-  margin: 40px 0 auto;
-  background-color: #ffffffdd;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
+/* Warnakan tajuk "Bahagian Prosedur Intervensi" */
 .content h2 {
+  color: #6a4caf;
   margin-top: 0;
 }
 
-.instruction-text {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #6a4caf;
-  background-color: #f3e8ff;
-  padding: 12px 20px;
-  margin: 0 auto 25px auto;
-  border-radius: 20px;
-  display: inline-block;
-  font-weight: bold;
-  box-shadow: 0 6px 12px rgba(106, 76, 175, 0.3); 
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.instruction-text:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 16px rgba(106, 76, 175, 0.4); 
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.card {
-  background-color: #fef2ff;
-  border: 2px solid #dcb0ff;
-  border-radius: 15px;
-  padding: 20px 30px;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  color: #4b3b6b;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
-  width: 240px;
-}
-
-.card:hover {
-  background-color: #eacaff;
-  transform: translateY(-5px);
-}
-
-footer {
-  background-color: #E3D0FF;
-  text-align: center;
-  padding: 20px;
+/* Gaya untuk teks "Klik untuk Ketahui Lebih Lanjut" (bukan butang) */
+.no-click {
+  pointer-events: none;
+  color: #888;
+  font-style: italic;
+  margin-bottom: 20px;
   font-size: 1rem;
-  color: #4b3b6b;
-  margin-top: auto;
-  width: 100%;
 }
 
-footer a {
-  color: #4b3b6b;
-  text-decoration: none;
+/* Jarakkan lagi kad prosedur */
+.card-container {
+  gap: 30px;
+  margin-top: 30px;
 }
 
-footer a:hover {
-  text-decoration: underline;
-}
-
-.back-button {
-  display: inline-block;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #000;
-  text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 8px;
-  font-weight: bold;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  z-index: 10;
-  transition: background-color 0.3s ease;
-}
-
-.back-button:hover {
-  background-color: rgba(255, 255, 255, 1);
+/* Naikkan footer supaya tidak perlu scroll */
+.header {
+  height: 85vh; /* Kurangkan sedikit tinggi imej untuk muat dalam skrin */
 }
