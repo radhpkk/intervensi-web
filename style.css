@@ -70,14 +70,14 @@ body {
 
 /* ========== 3. Main Content Box ========== */
 .content {
-  flex: 1;
-  padding: 40px 20px;
   max-width: 850px;
-  margin: 80px auto 40px auto; /* jarakkan dari header */
+  margin: 40px auto;
+  padding: 20px;
   background-color: #ffffffdd;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
   text-align: center;
+  flex-grow: 1;
 }
 
 .content h2 {
@@ -167,6 +167,7 @@ footer,
   font-size: 1rem;
   color: #4b3b6b;
   width: 100%;
+  margin-top: auto;
 }
 
 footer a {
